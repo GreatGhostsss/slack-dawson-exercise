@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🏳️‍🌈🐳👌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="upper">
+            <img id="upper-left" class="slack-logo" src="Slack_RGB.png" alt="hi-res Slack logo">
+            <div id="upper-search">Search</div>
+            <h3 id="upper-center">Twitter</h3>
+            <h3 id="upper-right">Open Slack</h3>
+        </div>
+    </div>
+    <div id="body-flex">
+        <div id="body-nav">
+            <ul>
+                <li>Menu item</li>
+                <li>Menu item</li>
+                <li>Menu item</li>
+                <li>Menu item</li>
+                <li>Menu item</li>
+                <li>Menu item</li>
+                <li>Menu item</li>
+                <li>Menu item</li>
+                <li>Menu item</li>
+                <li>Menu item</li>
+            </ul>
+        </div>
+        <div id="body-content">
+            <h1>Paginating through collections</h1>
+            <div class="cursor-explination">
+                <p>When you hear "cursor," you may think of these old friends:</p>
+                <img src="animatedPOINTERS.gif" alt="three different UI cursors" id="cursors">
+                <p>In the context of pagination, cursors are markers which designate how results
+                    display after you’ve queried an endpoint.</p>
+            </div>
+            <div id="body-content-text">
+
+                <p>Throughout the Slack platform, you'll encounter collections of <em>things</em>. Lists of users.
+                    Arrays of
+                    channels. A pride of lion emoji.</p>
+                <p>When you call an API method to retrieve most of these collections, they're returned to you in chunks
+                    of data. Check out more detail below on pagination in API methods, including how to use them and
+                    which methods follow the pattern.</p>
+                <p id="attention">Most methods that support pagination use a cursor-based approach, which uses a string
+                    to divide a
+                    list of results. However, some older methods use
+                    varied versions of pagination. The individual documentation for each API method is your source of
+                    truth for which pattern the method follows. </p>
+
+                <ul>
+                    <li><a href="">Cursor-based pagination</a></li>
+                    <li><a href="">Classic pagination</a></li>
+                </ul>
+
+                <h2>Overview: cursor-based pagination</h2>
+                <p> For larger collections like channel and user lists, Slack API methods return results using a
+                    cursor-based approach.</p>
+                <p><span id="hoverContent">Cursors are like pointers. ℹ️</span> Pointers point at
+                    things: they reference a
+                    specific iota,
+                    a
+                    place in the
+                    list
+                    where your last request left off. They help avoid loading an entire set just to give you a slice.
+                </p>
+                <p>A cursor-paginated method returns two things: a portion of the total set of results, and a cursor
+                    that
+                    points to the next portion of the results.</p>
+                <p>Please paginate along with us.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
