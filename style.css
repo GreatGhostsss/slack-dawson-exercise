@@ -34,6 +34,7 @@ body {
 
 #upper-center {
     margin-right: 20px;
+    color: grey;
 }
 
 #upper-right {
@@ -102,12 +103,13 @@ ul {
 #body-content-text {
     background-color: white;
     height: 100vh;
-    padding: 2px 10px;
+    padding: 7px 45px;
     width: 70%;
     font-family: sans-serif;
     font-size: 1.2em;
     line-height: 25px;
     border-radius: 9px;
+    font-weight: 400;
 }
 
 .cursor-explination {
@@ -115,7 +117,7 @@ ul {
     width: 20%;
     float: right;
     visibility: hidden;
-    font-size: 0.85em;
+    font-size: 0.75em;
     line-height: 15px;
     margin-top: 400px;
     background-color: white;

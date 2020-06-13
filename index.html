@@ -15,13 +15,13 @@
         <div id="upper">
             <img id="upper-left" class="slack-logo" src="Slack_RGB.png" alt="hi-res Slack logo">
             <div id="upper-search">Search</div>
-            <h3 id="upper-center">Twitter</h3>
+            <h3 id="upper-center">Tutorials</h3>
             <h3 id="upper-right">Open Slack</h3>
         </div>
     </div>
     <div id="body-flex">
         <div id="body-nav">
-            <ul>
+            <!-- <ul>
                 <li>Menu item</li>
                 <li>Menu item</li>
                 <li>Menu item</li>
@@ -32,14 +32,14 @@
                 <li>Menu item</li>
                 <li>Menu item</li>
                 <li>Menu item</li>
-            </ul>
+            </ul> -->
         </div>
         <div id="body-content">
             <h1>Paginating through collections</h1>
             <div class="cursor-explination">
-                <p>When you hear "cursor," you may think of these old friends:</p>
+                <p>When you think of cursors, you may think of these old friends:</p>
                 <img src="animatedPOINTERS.gif" alt="three different UI cursors" id="cursors">
-                <p>In the context of pagination, cursors are markers which designate how results
+                <p>But in the context of pagination, cursors are markers designating how results
                     display after you’ve queried an endpoint.</p>
             </div>
             <div id="body-content-text">
@@ -50,7 +50,8 @@
                 <p>When you call an API method to retrieve most of these collections, they're returned to you in chunks
                     of data. Check out more detail below on pagination in API methods, including how to use them and
                     which methods follow the pattern.</p>
-                <p id="attention">Most methods that support pagination use a cursor-based approach, which uses a string
+                <p id="attention">Most methods that support pagination use a cursor-based approach, which accepts a
+                    string
                     to divide a
                     list of results. However, some older methods use
                     varied versions of pagination. The individual documentation for each API method is your source of
